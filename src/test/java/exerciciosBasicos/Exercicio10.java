@@ -1,6 +1,5 @@
 package exerciciosBasicos;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -28,21 +27,21 @@ public class Exercicio10 {
      * n = períodos
      *
      */
-    @Ignore
+
     @Test
     public void calcularJuroSimplesDeDezeseisMil() {
 
         assertEquals(2560,calcularJurosSimples(16000,.04,4),0);
     }
 
-    @Ignore
+
     @Test
     public void calcularJuroSimplesDeCincoMil() {
 
         assertEquals(800,calcularJurosSimples(5000,.04,4),0);
     }
 
-    @Ignore
+
     @Test
     public void calcularJuroSimplesDeQuarentaMil() {
 
@@ -50,10 +49,11 @@ public class Exercicio10 {
     }
 
     private double calcularJurosSimples(double capital, double taxa, int quantidadeDePeriodos) {
+       double juros;
 
-        // Escreva sua lógica abaixo
+        juros = capital*taxa*quantidadeDePeriodos;
 
-        return 0;
+        return juros;
     }
 
 }

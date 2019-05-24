@@ -23,7 +23,7 @@ public class Exercicio9 {
      * Faça um algoritmo que calcule o reajuste de um salário
      *
      */
-    @Ignore
+
     @Test
     public void calcularreajusteDeSalarioMilPercentualQuinte() {
 
@@ -46,9 +46,10 @@ public class Exercicio9 {
 
     private double calcularReajuste(double salario, double percentualReajuste) {
 
-        // Escreva sua lógica abaixo
+        return  salario * percentualReajuste;
 
-        return 0;
+
+
     }
 
 }

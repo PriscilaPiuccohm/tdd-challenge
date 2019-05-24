@@ -1,6 +1,5 @@
 package exerciciosBasicos;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -13,51 +12,52 @@ public class Exercicio2 {
 
     /**
      * Exercício 2
-     *
+     * <p>
      * O dobro de um número qualquer
-     *
+     * <p>
      * Faça uma função para calcular o dobro de um número qualquer.
      */
-    @Ignore
+
     @Test
     public void oDobroDeUm() {
+
 
         assertEquals(2, dobro(1));
     }
 
-    @Ignore
+
+
+
     @Test
     public void oDobroDeDois() {
 
         assertEquals(4, dobro(2));
     }
 
-    @Ignore
+
     @Test
     public void oDobroDeTres() {
 
         assertEquals(6, dobro(3));
     }
 
-    @Ignore
+
     @Test
     public void oDobroDeNove() {
 
         assertEquals(18, dobro(9));
     }
 
-    @Ignore
+
     @Test
     public void oDobroDeQuarenta() {
 
         assertEquals(80, dobro(40));
     }
 
-    private int dobro(int numeroQualquer) {
+    private int dobro( int nume2) {
 
-        // Escreva sua lógica abaixo
+        return  nume2 * 2;
 
-
-        return 0;
     }
 }

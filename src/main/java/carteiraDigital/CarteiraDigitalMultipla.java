@@ -16,6 +16,7 @@ public class CarteiraDigitalMultipla extends CarteiraDigital {
 
     @Override
     public void debitar(Double valor) throws SaldoInsuficienteException {
+
     }
 
     @Override

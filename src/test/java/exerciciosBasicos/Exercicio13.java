@@ -1,6 +1,5 @@
 package exerciciosBasicos;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
@@ -14,34 +13,33 @@ public class Exercicio13 {
 
     /**
      * Exercício 13
-     *
+     * <p>
      * Maior que 10
-     *
+     * <p>
      * Crie uma função que descubra se um valor é maior ou menor que 10.
-     *
      */
-    @Ignore
+
     @Test
     public void verificaSeDoisEhMaiorQueDez() {
 
         assertFalse(ehMaiorQueDez(2));
     }
 
-    @Ignore
+
     @Test
     public void verificaSeTrinteEhMaiorQueDez() {
 
         assertTrue(ehMaiorQueDez(30));
     }
 
-    @Ignore
+
     @Test
     public void verificaSeDozeEhMaiorQueDez() {
 
         assertTrue(ehMaiorQueDez(12));
     }
 
-    @Ignore
+
     @Test
     public void verificaSeDezEhMaiorQueDez() {
 
@@ -50,9 +48,12 @@ public class Exercicio13 {
 
     private boolean ehMaiorQueDez(int numero) {
 
-        // Escreva sua lógica abaixo
+        if (numero > 10) {
+            return true;
+        } else {
+            return false;
 
-        return false;
+        }
+
     }
-
 }
