@@ -31,7 +31,7 @@ public class Exercicio25
 
             for (int i = 0; i < vetorres.length; i++) {
 
-                vetorres.add(i+1);
+               
 
             }
 
