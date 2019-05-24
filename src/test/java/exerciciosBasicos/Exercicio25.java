@@ -7,7 +7,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-public class Exercicio25
+public class Exercicio25{
 
 
         @Test
@@ -18,21 +18,18 @@ public class Exercicio25
             assertEquals(1, vetor.get(0).intValue());
             assertEquals(2, vetor.get(1).intValue());
             assertEquals(3,vetor.get(2).intValue());
-            assertEquals(4,vetor.get(4).intValue());
+            assertEquals(4,vetor.get(3).intValue());
             assertEquals(5,vetor.get(4).intValue());
         }
 
 
-        private int carregarVetor(int vetorres) {
+        private List<Integer> carregarVetor(int numero) {
 
 
-            List<Integer> vetor = new ArrayList<>();
+            List<Integer> vetorres =  new ArrayList<>();
 
-
-            for (int i = 0; i < vetorres.length; i++) {
-
-               
-
+            for (int i = 0; i < numero; i++) {
+                vetorres.add(i+1);
             }
 
             return vetorres;
