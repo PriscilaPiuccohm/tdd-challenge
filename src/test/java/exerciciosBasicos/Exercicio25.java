@@ -15,7 +15,9 @@ public class Exercicio25{
 
             List<Integer> vetor = carregarVetor(5);
 
-            assertEquals(1, vetor.get(0).intValue());
+            assertEquals(1, vetor.get(0).intValue()); //get pegar indice
+            System.out.println(vetor);
+
             assertEquals(2, vetor.get(1).intValue());
             assertEquals(3,vetor.get(2).intValue());
             assertEquals(4,vetor.get(3).intValue());
