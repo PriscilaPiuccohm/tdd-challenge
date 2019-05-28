@@ -16,6 +16,8 @@ public class Exercicio21 {
 
         assertEquals(8, contando(letras));
         assertEquals(8, contando(nome));
+        System.out.println(contando(letras));
+        System.out.println(nome);
     }
 
     private int contando(String letras) {

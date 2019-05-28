@@ -11,7 +11,8 @@ public class Exercicio22 {
     public void contandoVogal(){
 
         String nome = "priscila";
-        assertEquals (3,vogal(nome));
+       // assertEquals (3,vogal(nome));
+        System.out.println(vogal(nome));
     }
 
     @Test
@@ -19,6 +20,7 @@ public class Exercicio22 {
 
         String nome = "prIscilA";
         assertEquals (3,vogal(nome));
+        System.out.println(vogal(nome));
     }
 
     private int vogal(String nome) {
