@@ -10,25 +10,26 @@ import static org.junit.Assert.assertEquals;
 //Invertendo STRING;
 public class Exercicio24 {
 
- @Test
-  public void invertendoString(){
-     List<String> nome = Arrays.asList("p","r","i","s","c","i","l","a");
+    @Test
+    public void invertendoString() {
+        List<String> nome = Arrays.asList("p", "r", "i", "s", "c", "i", "l", "a");
 
 
-     System.out.println(invertendo(nome));
-  }
+        //System.out.println(invertendo(nome));
+    }
 
-    private List<String> invertendo(List<String> nome) {
+   // private List<String> invertendo(List<String> nome) {
 
-        String invertida = "";
+        //  String invertida = "";
 
-        for(int i = nome.size()- 1;i>=0; i --) {
+        //   for(int i = nome.size()- 1;i>=0; i --) {
 
-            invertida += String.valueOf(nome.charAt(i));
-        }
+        //    invertida += String.valueOf(nome.charAt(i));
+        // }
 
 
-        return invertida;
- }
+        // return invertida;
+        //}
 
-}
+    }
+//}
