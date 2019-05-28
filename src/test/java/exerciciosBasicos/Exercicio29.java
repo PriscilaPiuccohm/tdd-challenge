@@ -11,26 +11,25 @@ public class Exercicio29 {
 
     @Test
     public void contandoVogal() {
-        String nome = "aeiou";
-
-        List<String> nomes = Arrays.asList("aeiou");
+        String nome = "filipe";
 
         System.out.println(vogal(nome));
+        assertEquals(3,vogal(nome));
 
     }
 
     @Test
     public void contandoVogalComMaiusculo() {
 
-        String nomes = "aeiou";
+        String nomes = "assertEquals";
         System.out.println(nomes);
-      //  assertEquals(3, vogal(nome));
+        assertEquals(5, vogal(nomes));
 
     }
 
     private int vogal(String nomes) {
         int contador = 0;
-        String vogais = "aeiou";
+        final String vogais = "aeiou";
 
         for (int indice = 0; indice < nomes.length(); indice++) {
 
