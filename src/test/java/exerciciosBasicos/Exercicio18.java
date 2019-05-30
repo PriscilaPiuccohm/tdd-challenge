@@ -14,6 +14,8 @@ public class Exercicio18 {
     public void verificaAsequencia() {
 
         List<Integer> vetor = carregarVetor(5);
+        System.out.println(vetor);
+
 
         assertEquals(1, vetor.get(0).intValue());
         assertEquals(2, vetor.get(1).intValue());
@@ -21,6 +23,7 @@ public class Exercicio18 {
         assertEquals(4, vetor.get(3).intValue());
         assertEquals(5, vetor.get(4).intValue());
     }
+
 
     private List<Integer> carregarVetor(int tamanhoMaximo) {
 
