@@ -8,10 +8,17 @@ public class MainApplication {
 
         AutoInfracao a = new AutoInfracao();
         a.setDataAutuacao(LocalDate.of(2018,01,03));
-        a.setPontos("4-MÉDIA");
+        a.setPontos("4-Média");
+        System.out.println(a.numeroDePontosGravidade());
+
+
+
+
+
 
         //ld = ld.plusYears(5);
 
 
     }
 }
+// extrair o 4, depois converter Integer.parseInt();

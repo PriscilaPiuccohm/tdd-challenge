@@ -1,7 +1,7 @@
 package infracao;
 
 import java.time.LocalDate;
-import java.util.Date;
+
 
 public class AutoInfracao {
 
@@ -14,7 +14,7 @@ public class AutoInfracao {
     private String situacao;
 
 
-     AutoInfracao(String placa, long orgao, String numeroAuto, String codigoInfracao, LocalDate dataAutuacao, String pontos, String situacao) {
+    AutoInfracao(String placa, long orgao, String numeroAuto, String codigoInfracao, LocalDate dataAutuacao, String pontos, String situacao) {
         this.placa = placa;
         this.orgao = orgao;
         this.numeroAuto = numeroAuto;
@@ -85,27 +85,20 @@ public class AutoInfracao {
     }
 
     public void setOrgao(Long orgao) {
-         this.orgao = orgao;
+        this.orgao = orgao;
     }
 
-    public void  numeroDePontosGravidade(){
-         for(int i = 0; i > this.getPontos().length(); i++){
-           if (i == 4) {
-               System.out.println(4);
-        ///   }else if(this.getPontos);
-               System.out.println(4);
+
+    public int numeroDePontosGravidade() {
+        String valor = getPontos().substring(0,1);
+        int ponto = Integer.parseInt(valor);
 
 
-           }
+       return ponto;
 
-
-
-           }
 
     }
-
-    }
-
+}
 
 
 
