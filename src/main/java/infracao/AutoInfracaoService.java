@@ -14,7 +14,8 @@ public class AutoInfracaoService {
 
         for (int i = 0; i < autoInfracaos.size(); i++) {
            AutoInfracao autoInfracao =  autoInfracaos.get(i);
-           acumulador = autoInfracao.numeroDePontosGravidade() + acumulador * 12;
+           acumulador = autoInfracao.numeroDePontosGravidade() + acumulador;
+            valor = autoInfracao.numeroDePontosGravidade() * 12;
 
 
         }
