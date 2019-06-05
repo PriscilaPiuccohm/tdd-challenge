@@ -39,16 +39,16 @@ public class AutoInfracaoServiceTest {
         autoinfracao3.setDataAutuacao(LocalDate.of(2018, 01, 03));
         autoinfracao3.setPontos("4-Média");
         System.out.println(autoinfracao3.numeroDePontosGravidade());
-        AutoInfracao autoinfracao2 = new AutoInfracao();
-        autoinfracao2.setPontos("5");
-        autoinfracao2.setDataAutuacao(LocalDate.of(2019,05,01));
+        AutoInfracao autoinfracao4 = new AutoInfracao();
+        autoinfracao4.setPontos("5");
+        autoinfracao4.setDataAutuacao(LocalDate.of(2019,05,01));
 
         List<AutoInfracao> infracao  = new ArrayList<>();
         infracao.add(autoinfracao3);
-        infracao.add(autoinfracao2);
+        infracao.add(autoinfracao4);
         AutoInfracaoService autoinfracaoService1 = new AutoInfracaoService();
         int totalPontos = autoinfracaoService1.calcularAltoInfracao(infracao);
-        assertEquals(8,totalPontos);
+        assertEquals(9,totalPontos);
     }
 
 

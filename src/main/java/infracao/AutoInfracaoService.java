@@ -13,15 +13,33 @@ public class AutoInfracaoService {
 
 
         for (int i = 0; i < autoInfracaos.size(); i++) {
-           AutoInfracao autoInfracao =  autoInfracaos.get(i);
-           acumulador = autoInfracao.numeroDePontosGravidade() + acumulador;
-            valor = autoInfracao.numeroDePontosGravidade() * 12;
+            AutoInfracao autoInfracao = autoInfracaos.get(i);
+            acumulador = autoInfracao.numeroDePontosGravidade() + acumulador;
+
+
+        }
+
+        return acumulador;
+
+    }
+
+
+
+    public int calcularInfracaosComTresInfracoes (List<AutoInfracao> autoInfracaos) {
+
+        int acumulador = 0;
+
+
+        for (int i = 0; i < autoInfracaos.size(); i++) {
+            AutoInfracao autoInfracao = autoInfracaos.get(i);
+            acumulador = autoInfracao.numeroDePontosGravidade();
+
 
 
         }
 
         return acumulador;
     }
-
 }
+
 
