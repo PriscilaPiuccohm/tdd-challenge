@@ -25,4 +25,14 @@ public class AutoInfracaoTest {
 
         assertEquals(7,a.numeroDePontosGravidade());
     }
+
+    @Test
+    public void numeroDePontosGravidade_Grave() {
+        AutoInfracao a = new AutoInfracao();
+        a.setDataAutuacao(LocalDate.of(2018, 01, 03));
+        a.setPontos("5-Grave");
+
+        assertEquals(5, a.numeroDePontosGravidade());
+    }
+
 }
