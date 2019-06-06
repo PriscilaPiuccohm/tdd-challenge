@@ -26,13 +26,15 @@ public class AutoInfracaoService {
 
 
 
-    public int calcularInfracaosComTresInfracoes (List<AutoInfracao> dataAutuacao ) {
+    public int calcularInfracaosComTresInfracoes (List<AutoInfracao> autoInfracaos{
+            autoInfracaos.getDataAutuacao();
+
         int acumulador = 0;
 
 
-        for (int i = 0; i < dataAutuacao.size(); i++) {
-            AutoInfracao autoInfracao = dataAutuacao.get(i);
-            acumulador = autoInfracao.numeroDePontosGravidade();
+        for (int i = 0; i < autoInfracaos.size(); i++) {
+            AutoInfracao autoInfracao = autoInfracaos.get(i);
+            if();
 
 
 
