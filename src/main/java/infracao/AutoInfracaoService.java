@@ -37,7 +37,7 @@ public class AutoInfracaoService {
 
          Calendar cal = Calendar.getInstance();
          cal.set(Calendar.YEAR,2020);
-         cal.set(Calendar.MONDAY, 1); // mes fevereiro
+         cal.set(Calendar.MONDAY, 1); // mes fevereiro  06:35
 
 
         }
