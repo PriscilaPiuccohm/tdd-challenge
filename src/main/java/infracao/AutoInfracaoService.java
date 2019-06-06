@@ -2,11 +2,12 @@ package infracao;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class AutoInfracaoService {
 
-    public int calcularAltoInfracao(List<AutoInfracao> autoInfracaos) {
+    public int somarPontosPessoa(List<AutoInfracao> autoInfracaos) {
 
 
         int acumulador = 0;
@@ -26,17 +27,17 @@ public class AutoInfracaoService {
 
 
 
-    public int calcularInfracaosComTresInfracoes (List<AutoInfracao> autoInfracaos{
-            autoInfracaos.getDataAutuacao();
+    public int somarPontosPessoaPorAno (List<AutoInfracao> autoInfracoes){
 
+        LocalDate dataAutuacao;
         int acumulador = 0;
 
 
-        for (int i = 0; i < autoInfracaos.size(); i++) {
-            AutoInfracao autoInfracao = autoInfracaos.get(i);
-            if();
+        for (int i = 0; i < autoInfracoes.size(); i++) {
 
-
+         Calendar cal = Calendar.getInstance();
+         cal.set(Calendar.YEAR,2020);
+         cal.set(Calendar.MONDAY, 1); // mes fevereiro
 
 
         }
