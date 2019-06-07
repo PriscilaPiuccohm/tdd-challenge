@@ -34,7 +34,7 @@ public class AutoInfracaoService {
         Date d;
 
 
-        //for (int i = 0; i < autoInfracoes.size(); i++) {
+        for (int i = 0; i < autoInfracoes.size(); i++) {
 
             Calendar cal = Calendar.getInstance();
             cal.set(2020, 1, 5, 13, 30, 0);
@@ -44,10 +44,11 @@ public class AutoInfracaoService {
 
         }
 
-        return  ;
+
+        return acumulador;
 
     }
-
 }
+
 
 
