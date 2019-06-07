@@ -3,6 +3,7 @@ package infracao;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class AutoInfracaoService {
@@ -26,24 +27,27 @@ public class AutoInfracaoService {
     }
 
 
-
-    public int somarPontosPessoaPorAno (List<AutoInfracao> autoInfracoes){
+    public int somarPontosPessoaPorAno(List<AutoInfracao> autoInfracoes) {
 
         LocalDate dataAutuacao;
         int acumulador = 0;
+        Date d;
 
 
-        for (int i = 0; i < autoInfracoes.size(); i++) {
+        //for (int i = 0; i < autoInfracoes.size(); i++) {
 
-         Calendar cal = Calendar.getInstance();
-         cal.set(Calendar.YEAR,2020);
-         cal.set(Calendar.MONDAY, 1); // mes fevereiro  06:35
+            Calendar cal = Calendar.getInstance();
+            cal.set(2020, 1, 5, 13, 30, 0);
+
+            Date e = cal.getTime();
 
 
         }
 
-        return acumulador;
+        return  ;
+
     }
+
 }
 
 

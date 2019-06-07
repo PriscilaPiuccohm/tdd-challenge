@@ -3,19 +3,26 @@ package exerciciosBasicos;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class Exercicio30 {
 
 
-    @Test
-    public void verificaAsequencia() {
+    public void MostrarDate(List<Integer> dadev) {
 
-        List<Integer> nome = Arrays.asList(1,5,6,7,8);
 
+        for (int i = 0; i < dadev.size(); i++) {
+
+            Calendar cal = Calendar.getInstance();
+            cal.set(2020, 1, 5, 13, 30, 0);
+
+            Date e = cal.getTime();
+            System.out.println(e);
+
+        }
+    }
     }
 
-    private List<Integer> nome (int i, int i1, int i2, int i3) {
-        return null;
-    }
-}
+
