@@ -29,26 +29,11 @@ public class AutoInfracaoService {
 
     public int somarPontosPessoaPorAno(List<AutoInfracao> autoInfracoes) {
 
-        LocalDate dataAutuacao;
-        int acumulador = 0;
-        Date d;
-
-
-        for (int i = 0; i < autoInfracoes.size(); i++) {
-
-            Calendar cal = Calendar.getInstance();
-            cal.set(2020, 1, 5, 13, 30, 0);
-
-            Date e = cal.getTime();
-
-
-        }
-
-
-        return acumulador;
+     return 0;
+    }
 
     }
-}
+
 
 
 
