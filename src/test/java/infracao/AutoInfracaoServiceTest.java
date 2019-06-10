@@ -9,7 +9,6 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 public class AutoInfracaoServiceTest {
-
     @Test
     public void somarPontosPessoa() {
 
@@ -36,19 +35,20 @@ public class AutoInfracaoServiceTest {
 
     public void somarPontosPessoaPorAno(){
         AutoInfracao autoinfracao3 = new AutoInfracao();
-        autoinfracao3.setDataAutuacao(LocalDate.of(2018, 01, 03));
+        autoinfracao3.setDataAutuacao(LocalDate.of(2017, 01, 01));
         autoinfracao3.setPontos("4-Média");
         System.out.println(autoinfracao3.numeroDePontosGravidade());
         AutoInfracao autoinfracao4 = new AutoInfracao();
         autoinfracao4.setPontos("5-grave");
-        autoinfracao4.setDataAutuacao(LocalDate.of(2019,05,01));
+        autoinfracao4.setDataAutuacao(LocalDate.of(2017,012,31));
 
         List<AutoInfracao> infracao  = new ArrayList<>();
         infracao.add(autoinfracao3);
         infracao.add(autoinfracao4);
         AutoInfracaoService autoinfracaoService1 = new AutoInfracaoService();
-        int totalPontos = autoinfracaoService1.somarPontosPessoaPorAno(infracao);
+        int totalPontos = autoinfracaoService1.somarPontosPessoaPorAno(infracao,LocalDate.of(2017,05,01));
         assertEquals(9,totalPontos);
+
     }
 
 
