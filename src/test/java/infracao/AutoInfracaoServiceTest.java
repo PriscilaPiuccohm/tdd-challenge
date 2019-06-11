@@ -39,30 +39,41 @@ public class AutoInfracaoServiceTest {
         autoinfracao3.setDataAutuacao(LocalDate.of(2017, 01, 01));
         autoinfracao3.setPontos("4- Média");
         System.out.println(autoinfracao3.numeroDePontosGravidade());
+
         AutoInfracao autoinfracao4 = new AutoInfracao();
-        autoinfracao4.setPontos("5- Grave");
         autoinfracao4.setDataAutuacao(LocalDate.of(2017, 12, 31));
-        AutoInfracao autoInfracao5 = new AutoInfracao();
-        autoInfracao5.setDataAutuacao(LocalDate.of(2017,05,01));
-        autoInfracao5.setPontos("4- Média");
-        AutoInfracao autoInfracao6 = new AutoInfracao();
-        autoInfracao6.setDataAutuacao(LocalDate.of(2017,05,15));
-        autoInfracao6.setPontos("5 - Grave");
+        autoinfracao4.setPontos("5- Grave");
+        System.out.println(autoinfracao4.numeroDePontosGravidade());
+
+        AutoInfracao autoinfracao5 = new AutoInfracao();
+        autoinfracao4.setDataAutuacao(LocalDate.of(2017, 05, 1));
+        autoinfracao4.setPontos("4- Media");
+        System.out.println(autoinfracao5.numeroDePontosGravidade());
+
+        AutoInfracao autoinfracao6 = new AutoInfracao();
+        autoinfracao6.setDataAutuacao(LocalDate.of(2017,05,15));
+        autoinfracao6.setPontos("5- Grave");
+        System.out.println(autoinfracao6.numeroDePontosGravidade());
+
+
         AutoInfracao autoinfracao7 = new AutoInfracao();
         autoinfracao7.setDataAutuacao(LocalDate.of(2018,01,01));
         autoinfracao7.setPontos("4 - Média");
+        System.out.println(autoinfracao7.numeroDePontosGravidade());
+
+
         AutoInfracao autoInfracao8 = new AutoInfracao();
         autoInfracao8.setDataAutuacao(LocalDate.of(2018,8,11));
         autoInfracao8.setPontos("7 - Gravissima");
-
+        System.out.println(autoInfracao8.numeroDePontosGravidade());
 
 
 
         List<AutoInfracao> infracao = new ArrayList<>();
         infracao.add(autoinfracao3);
         infracao.add(autoinfracao4);
-        infracao.add(autoInfracao5);
-        infracao.add(autoInfracao6);
+        infracao.add(autoinfracao5);
+        infracao.add(autoinfracao6);
         infracao.add(autoinfracao7);
         infracao.add(autoInfracao8);
 
@@ -70,7 +81,7 @@ public class AutoInfracaoServiceTest {
         int totalPontos = autoinfracaoService1.somarPontosPessoaPorAno(infracao, LocalDate.of(2017, 05, 01));
         assertEquals(9, totalPontos);
         AutoInfracaoService autoinfracaoService2 = new AutoInfracaoService();
-        int totalPonto2 = autoinfracaoService2.somarPontosPessoaPorAno(infracao,LocalDate.of(20107,05,01));
+        int totalPonto = autoinfracaoService2.somarPontosPessoaPorAno(infracao,LocalDate.of(20107,05,01));
         assertEquals(13,totalPontos);
         AutoInfracaoService autoinfracaoService3 = new AutoInfracaoService();
         int totalPonto3 = autoinfracaoService3.somarPontosPessoaPorAno(infracao, LocalDate.of(2017,9,01));
