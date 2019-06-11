@@ -29,10 +29,11 @@ public class AutoInfracaoServiceTest {
         assertEquals(11, totalPontos);
 
 
+
         List<AutoInfracao> infracao2 = new ArrayList<>();
         infracao.add(autoinfracao2);
         AutoInfracaoService autoinfracaoService2 = new AutoInfracaoService();
-        int totalPontos2 = autoinfracaoService1.somarPontosPessoa(infracao);
+        int totalPontos2 = autoinfracaoService2.somarPontosPessoa(infracao);
         assertEquals(13,totalPontos2);
 
 
