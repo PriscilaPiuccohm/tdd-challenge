@@ -25,11 +25,11 @@ public class AutoInfracaoService {
     public int somarPontosPessoaPorAno(List<AutoInfracao> autoInfracoes, LocalDate dataInicial) {
 
 
-
         return 0;
     }
 
-    }
+
+}
 
 
 

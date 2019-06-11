@@ -24,6 +24,9 @@ public class MainApplication {
         AutoInfracaoService autoinfracaoService1 = new AutoInfracaoService();
         int totalPontos = autoinfracaoService1.somarPontosPessoa(infracao);
         System.out.println(totalPontos);
+        AutoInfracaoService autoinfracaoService2 = new AutoInfracaoService();
+        int totalPontos2 = autoinfracaoService1.somarPontosPessoa(infracao);
+        System.out.println(totalPontos2);
 
     }
 }
