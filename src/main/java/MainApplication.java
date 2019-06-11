@@ -4,6 +4,7 @@ import infracao.AutoInfracaoService;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class MainApplication {
@@ -21,7 +22,7 @@ public class MainApplication {
         infracao.add(autoinfracao1);
         infracao.add(autoinfracao2);
         AutoInfracaoService autoinfracaoService1 = new AutoInfracaoService();
-        int totalPontos = autoinfracaoService1.somarPontosPessoaPorAno(infracao);
+        int totalPontos = autoinfracaoService1.somarPontosPessoa(infracao);
         System.out.println(totalPontos);
 
     }
