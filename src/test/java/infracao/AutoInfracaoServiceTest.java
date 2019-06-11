@@ -48,24 +48,24 @@ public class AutoInfracaoServiceTest {
         AutoInfracao autoinfracao5 = new AutoInfracao();
         autoinfracao4.setDataAutuacao(LocalDate.of(2017, 05, 1));
         autoinfracao4.setPontos("4- Media");
-        System.out.println(autoinfracao5.numeroDePontosGravidade());
+        System.out.println(autoinfracao5.getPontos());
 
         AutoInfracao autoinfracao6 = new AutoInfracao();
         autoinfracao6.setDataAutuacao(LocalDate.of(2017,05,15));
         autoinfracao6.setPontos("5- Grave");
-        System.out.println(autoinfracao6.numeroDePontosGravidade());
+        System.out.println(autoinfracao6.getPontos());
 
 
         AutoInfracao autoinfracao7 = new AutoInfracao();
         autoinfracao7.setDataAutuacao(LocalDate.of(2018,01,01));
         autoinfracao7.setPontos("4 - Média");
-        System.out.println(autoinfracao7.numeroDePontosGravidade());
+        System.out.println(autoinfracao7.getPontos());
 
 
         AutoInfracao autoInfracao8 = new AutoInfracao();
         autoInfracao8.setDataAutuacao(LocalDate.of(2018,8,11));
         autoInfracao8.setPontos("7 - Gravissima");
-        System.out.println(autoInfracao8.numeroDePontosGravidade());
+        System.out.println(autoInfracao8.getPontos());
 
 
 
