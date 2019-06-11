@@ -49,23 +49,30 @@ public class AutoInfracaoServiceTest {
         autoinfracao4.setDataAutuacao(LocalDate.of(2017, 05, 1));
         autoinfracao4.setPontos("4- Media");
         System.out.println(autoinfracao5.getPontos());
+        System.out.println(autoinfracao5.getDataAutuacao());
+
 
         AutoInfracao autoinfracao6 = new AutoInfracao();
         autoinfracao6.setDataAutuacao(LocalDate.of(2017,05,15));
         autoinfracao6.setPontos("5- Grave");
         System.out.println(autoinfracao6.getPontos());
+        System.out.println(autoinfracao6.getDataAutuacao());
 
 
         AutoInfracao autoinfracao7 = new AutoInfracao();
         autoinfracao7.setDataAutuacao(LocalDate.of(2018,01,01));
         autoinfracao7.setPontos("4 - Média");
         System.out.println(autoinfracao7.getPontos());
+        System.out.println(autoinfracao7.getDataAutuacao());
+
+
 
 
         AutoInfracao autoInfracao8 = new AutoInfracao();
         autoInfracao8.setDataAutuacao(LocalDate.of(2018,8,11));
         autoInfracao8.setPontos("7 - Gravissima");
         System.out.println(autoInfracao8.getPontos());
+        System.out.println(autoInfracao8.getDataAutuacao());
 
 
 
@@ -78,13 +85,13 @@ public class AutoInfracaoServiceTest {
         infracao.add(autoInfracao8);
 
         AutoInfracaoService autoinfracaoService1 = new AutoInfracaoService();
-        int totalPontos = autoinfracaoService1.somarPontosPessoaPorAno(infracao, LocalDate.of(2017, 05, 01));
+        int totalPontos = autoinfracaoService1.somarPontosPessoaPorAno(infracao, LocalDate.of(2017, 5, 1));
         assertEquals(9, totalPontos);
         AutoInfracaoService autoinfracaoService2 = new AutoInfracaoService();
-        int totalPonto = autoinfracaoService1.somarPontosPessoaPorAno(infracao,LocalDate.of(20107,05,01));
+        int totalPonto = autoinfracaoService1.somarPontosPessoaPorAno(infracao,LocalDate.of(2017, 5,1));
         assertEquals(13,totalPontos);
         AutoInfracaoService autoinfracaoService3 = new AutoInfracaoService();
-        int totalPonto3 = autoinfracaoService1.somarPontosPessoaPorAno(infracao, LocalDate.of(2017,9,01));
+        int totalPonto3 = autoinfracaoService1.somarPontosPessoaPorAno(infracao, LocalDate.of(2017,9,1));
         assertEquals(11,totalPontos);
     }
 
