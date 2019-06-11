@@ -21,12 +21,12 @@ public class MainApplication {
         List<AutoInfracao> infracao  = new ArrayList<>();
         infracao.add(autoinfracao1);
         infracao.add(autoinfracao2);
+
         AutoInfracaoService autoinfracaoService1 = new AutoInfracaoService();
         int totalPontos = autoinfracaoService1.somarPontosPessoa(infracao);
         System.out.println(totalPontos);
-        AutoInfracaoService autoinfracaoService2 = new AutoInfracaoService();
-        int totalPontos2 = autoinfracaoService1.somarPontosPessoa(infracao);
-        System.out.println(totalPontos2);
+
+
 
     }
 }

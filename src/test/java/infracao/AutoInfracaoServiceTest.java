@@ -24,6 +24,7 @@ public class AutoInfracaoServiceTest {
 
         List<AutoInfracao> infracao = new ArrayList<>();
         infracao.add(autoinfracao1);
+        infracao.add(autoinfracao2);
         AutoInfracaoService autoinfracaoService1 = new AutoInfracaoService();
         int totalPontos = autoinfracaoService1.somarPontosPessoa(infracao);
         assertEquals(11, totalPontos);
@@ -94,9 +95,11 @@ public class AutoInfracaoServiceTest {
         AutoInfracaoService autoinfracaoService1 = new AutoInfracaoService();
         int totalPontos = autoinfracaoService1.somarPontosPessoaPorAno(infracao, LocalDate.of(2017, 6, 1));
         assertEquals(9, totalPontos);
+
         AutoInfracaoService autoinfracaoService2 = new AutoInfracaoService();
         int totalPontos2 = autoinfracaoService1.somarPontosPessoaPorAno(infracao,LocalDate.of(2017, 5,1));
         assertEquals(13,totalPontos2);
+
         AutoInfracaoService autoinfracaoService3 = new AutoInfracaoService();
         int totalPontos3 = autoinfracaoService1.somarPontosPessoaPorAno(infracao, LocalDate.of(2017,9,1));
         assertEquals(11,totalPontos3);
