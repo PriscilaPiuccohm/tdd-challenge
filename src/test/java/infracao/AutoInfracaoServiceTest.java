@@ -81,10 +81,10 @@ public class AutoInfracaoServiceTest {
         int totalPontos = autoinfracaoService1.somarPontosPessoaPorAno(infracao, LocalDate.of(2017, 05, 01));
         assertEquals(9, totalPontos);
         AutoInfracaoService autoinfracaoService2 = new AutoInfracaoService();
-        int totalPonto = autoinfracaoService2.somarPontosPessoaPorAno(infracao,LocalDate.of(20107,05,01));
+        int totalPonto = autoinfracaoService1.somarPontosPessoaPorAno(infracao,LocalDate.of(20107,05,01));
         assertEquals(13,totalPontos);
         AutoInfracaoService autoinfracaoService3 = new AutoInfracaoService();
-        int totalPonto3 = autoinfracaoService3.somarPontosPessoaPorAno(infracao, LocalDate.of(2017,9,01));
+        int totalPonto3 = autoinfracaoService1.somarPontosPessoaPorAno(infracao, LocalDate.of(2017,9,01));
         assertEquals(11,totalPontos);
     }
 
