@@ -21,7 +21,6 @@ public class AutoInfracaoService {
 
     }
 
-
     public int somarPontosPessoaPorAno(List<AutoInfracao> autoInfracoes, LocalDate dataInicial) {
 
         int acumuladores = 0;

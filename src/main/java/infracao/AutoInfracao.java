@@ -99,7 +99,7 @@ public class AutoInfracao {
 
     }
 
-    public int somarPontoss() {
+    public int somarPontosPessoaPorAno() {
         String valor = getPontos().substring(0, 1);
         int ponto = Integer.parseInt(valor);
         ponto++;
