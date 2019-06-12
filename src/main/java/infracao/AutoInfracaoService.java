@@ -24,8 +24,15 @@ public class AutoInfracaoService {
 
     public int somarPontosPessoaPorAno(List<AutoInfracao> autoInfracoes, LocalDate dataInicial) {
 
+        int acumuladores = 0;
 
-        return 0;
+        for(AutoInfracao autoInfracao : autoInfracoes){
+            acumuladores +=autoInfracao.somarPontoss();
+
+        }
+
+
+        return acumuladores;
     }
 
 

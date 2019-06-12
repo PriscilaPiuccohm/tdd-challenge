@@ -90,15 +90,30 @@ public class AutoInfracao {
 
 
     public int numeroDePontosGravidade() {
-        String valor = getPontos().substring(0,1);
+        String valor = getPontos().substring(0, 1);
         int ponto = Integer.parseInt(valor);
 
 
-       return ponto;
+        return ponto;
 
 
     }
+
+    public int somarPontoss() {
+        String valor = getPontos().substring(0, 1);
+        int ponto = Integer.parseInt(valor);
+        ponto++;
+
+
+
+        return ponto;
+    }
+
 }
+
+
+
+
 
 
 

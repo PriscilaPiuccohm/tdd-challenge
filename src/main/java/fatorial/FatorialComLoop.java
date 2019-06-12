@@ -11,7 +11,8 @@ public class FatorialComLoop implements Fatorial {
             acumulador *= valor --;
 
         }
-       return acumulador;
+
+        return acumulador;
     }
 }
 
